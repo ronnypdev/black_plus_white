@@ -5,12 +5,28 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Black + White | Home
-        link(rel="stylesheet", href="css/app.css")
         link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
+        link(rel="stylesheet", href="css/app.css")
     body
 
-        .container.text-center
-            h1 Hello World
+        header.bg-light.p-2
+            nav.container.d-flex.justify-content-between
+                a(class="brand mt-2", href="index.html")
+                    img(src="images/logo.png", alt="Black + White logo icon")
+                
+                // List navigation
+                ul.nav
+                    li.nav-item
+                        a(class="nav-link", href="index.html") home
+                    li.nav-item
+                        a(class="nav-link", href="services.html") our services
+                    li.nav-item
+                        a(class="nav-link", href="howwe.html") how we work
+                    li.nav-item
+                        a(class="nav-link", href="testimonial.html") testimonials
+                    li.nav-item
+                        a(class="nav-link", href="work.html") work samples
+                // End list navigation
 
 
         script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")

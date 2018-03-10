@@ -1,0 +1,22 @@
+@import url("https://use.typekit.net/kft6vzb.css");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 1em; }
+
+a {
+  text-decoration: none;
+  /*color: #ffffff;*/ }
+
+ol,
+ul {
+  list-style: none; }
