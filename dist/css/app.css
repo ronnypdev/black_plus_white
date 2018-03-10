@@ -1,0 +1,30 @@
+@import url("https://use.typekit.net/kft6vzb.css");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 1em; }
+
+header {
+  border-bottom: 1px solid #eeeeee; }
+
+a {
+  text-decoration: none;
+  /*color: #ffffff;*/ }
+
+ol,
+ul {
+  list-style: none; }
+
+.bw-nav a {
+  color: #000000; }
+  .bw-nav a:focus, .bw-nav a:hover {
+    color: #000000; }
