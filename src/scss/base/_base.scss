@@ -1,0 +1,32 @@
+//======================================================================
+// Base
+//======================================================================
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: em(16px);
+}
+
+header {
+  border-bottom: 1px solid $light-grey;
+}
+
+a {
+  text-decoration: none;
+  /*color: #ffffff;*/
+}
+
+ol,
+ul {
+  list-style: none;
+}
