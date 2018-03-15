@@ -1,0 +1,27 @@
+//======================================================================
+// Home Styles
+//======================================================================
+.fish-bg {
+  width: 100%;
+  height: 231px;
+  background: url('../images/city-bg.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  h4 {
+    font-size: em(23px);
+    color: $white;
+    display: inline-table;
+    padding: 5px;
+    margin-left: 15px;
+    background: rgba($color: #000000, $alpha: 0.7);
+  }
+}
+
+.black-box {
+  display: block;
+  width: 100%;
+  height: 231px;
+  background: $darker-grey;
+}
