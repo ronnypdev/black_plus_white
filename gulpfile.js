@@ -18,13 +18,13 @@ gulp.task('concatScripts', () => {
   return gulp
     .src(['src/js/*.js', 'src/js/main.js'])
     .pipe(concat('app.js'))
-    .pipe(gulp.dest('src/js/'));
+    .pipe(gulp.dest('dist/js/'));
 });
 
 // Minifying Scripts
 gulp.task('minifyScripts', ['concatScripts'], () => {
   return gulp
-    .src('src/js/app.js')
+    .src('dist/js/app.js')
     .pipe(uglify())
     .pipe(rename('app.min.js'))
     .pipe(gulp.dest('dist/js/'));
@@ -47,7 +47,7 @@ gulp.task('styles', () => {
 // Pug aka Jade compile to HTML task
 gulp.task('views', () => {
   return gulp
-    .src('src/views/**/**/*.pug')
+    .src('src/views/*.pug')
     .pipe(pug({ pretty: true, compileDebug: true }))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({ stream: true }));
@@ -82,7 +82,7 @@ gulp.task('browserSync', () => {
 // Watch Files
 gulp.task('watch', () => {
   gulp.watch('src/scss/**/*.scss', ['styles']);
-  gulp.watch('src/js/main.js', ['concatScripts']);
+  gulp.watch('src/js/main.js', ['minifyScripts']);
   gulp.watch('src/views/**/**/*.pug', ['views']);
   gulp.watch('src/images/**/*.+(png|jpg|jpeg|gif|svg)', ['images']);
   gulp.watch('src/fonts/**/*', ['fonts']);
@@ -99,7 +99,7 @@ gulp.task('clean', () => {
 
 gulp.task('default', () => {
   runSequence(
-    ['styles', 'views', 'minifyScripts', 'images', 'fonts', 'browserSync'],
+    ['styles', 'views', 'images', 'fonts', 'minifyScripts', 'browserSync'],
     'watch'
   );
 });
@@ -107,4 +107,3 @@ gulp.task('default', () => {
 gulp.task('build', () => {
   runSequence('clean', 'styles', ['images', 'fonts']);
 });
-

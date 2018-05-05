@@ -1,3 +1,5 @@
+console.log('this is working like shit');
+
 console.log('I will become a excellent front end guy fuck');
 
 alert("I'm too good at this shit and ues");
