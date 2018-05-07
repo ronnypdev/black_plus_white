@@ -166,3 +166,18 @@ ul {
   .prev,
   .next {
     display: none; } }
+
+.main-nav {
+  background-color: #fff !important; }
+
+.navbar-light .navbar-toggler {
+  color: #000;
+  border-color: #000; }
+
+@media (max-width: 991.98px) {
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px; } }

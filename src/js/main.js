@@ -1,3 +1,3 @@
 console.log('I will become a excellent front end guy fuck');
 
-alert("I'm too good at this shit and ues");
+alert('I am an amazing Front End Engineer');
