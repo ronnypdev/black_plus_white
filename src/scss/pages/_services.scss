@@ -24,3 +24,8 @@
     list-style: square;
   }
 }
+@media #{$medium} {
+  .list-div {
+    display: none;
+  }
+}

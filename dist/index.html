@@ -11,30 +11,35 @@
   </head>
   <body>
     <header class="p-3">
-      <nav class="container d-flex justify-content-between"><a class="brand mt-2" href="index.html"><img src="images/logo.png" alt="Black + White logo icon"/></a>
-        <!-- List navigation-->
-        <ul class="nav bw-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">our services</a></li>
-          <li class="nav-item"><a class="nav-link" href="howwe.html">how we work</a></li>
-          <li class="nav-item"><a class="nav-link" href="testimonial.html">testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="work.html">work samples</a></li>
-        </ul>
-        <!-- End list navigation-->
-      </nav>
+      <div class="container">
+        <nav class="d-flex justify-content-between navbar navbar-expand-lg navbar-toggleable-md navbar-light bg-light main-nav"><a class="navbar-brand mt-2" href="index.html"><img src="images/logo.png" alt="Black + White logo icon"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <!-- List navigation-->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="nav bw-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">our services</a></li>
+              <li class="nav-item"><a class="nav-link" href="howwe.html">how we work</a></li>
+              <li class="nav-item"><a class="nav-link" href="testimonial.html">testimonials</a></li>
+              <li class="nav-item"><a class="nav-link" href="work.html">work samples</a></li>
+            </ul>
+          </div>
+          <!-- End list navigation-->
+        </nav>
+      </div>
     </header>
     <!-- End header-->
     <!-- Hero section-->
     <section class="container my-3">
       <div class="row">
-        <div class="col">
+        <div class="col-md-9">
           <div class="fish-bg">
             <h4>some slick phrase would go in here </h4>
             <h4>to sum up what the business </h4>
             <h4>actually does and stands for</h4>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 div-box">
           <div class="black-box"></div>
         </div>
       </div>
@@ -43,7 +48,7 @@
     <!-- Main content section-->
     <section class="container py-2">
       <div class="row">
-        <div class="col info-sec">
+        <div class="col-md-4 info-sec">
           <h2>services we offer</h2>
           <hr/>
           <p>
@@ -51,7 +56,7 @@
           <p>Quisque a tellus. Vestibulum tincidunt lorem ac est. Vivamus augue quam, hendrerit at, porta ut, tristique ac, lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur fringilla eros ultrices justo. Nunc condimentum. Ut id dui in erat vulputate ultricies </p>
           <button class="btn-ba">read more</button>
         </div>
-        <div class="col info-sec">
+        <div class="col-md-4 info-sec">
           <h2>how we work</h2>
           <hr/>
           <p>
@@ -60,14 +65,14 @@
           <p>Cras orci odio, consequat vel, venenatis id, mollis a, lorem. Ut commodo accumsan sapien. </p>
           <button class="btn-ba">read more</button>
         </div>
-        <div class="col-md-3 info-sec"> 
+        <div class="col-md-4 info-sec"> 
           <blockquote><em>
               Clean, elegant typography 
               matched with sharp lines 
               and precise spacing leads 
               to a professional look 
               and feel.</em></blockquote>
-          <p> <em>
+          <p> <em class="citing">
                Collis Ta’eed <br> Designer</em></p>
         </div>
       </div>

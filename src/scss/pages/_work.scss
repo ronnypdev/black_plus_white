@@ -21,3 +21,10 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+@media #{$small} {
+  .prev,
+  .next {
+    display: none;
+  }
+}

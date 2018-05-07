@@ -1,0 +1,19 @@
+//======================================================================
+// Resets Styles
+//======================================================================
+
+.main-nav {
+  background-color: #fff !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: #000;
+  border-color: #000;
+}
+
+@media #{$medium} {
+  .nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
