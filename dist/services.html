@@ -11,17 +11,22 @@
   </head>
   <body>
     <header class="p-3">
-      <nav class="container d-flex justify-content-between"><a class="brand mt-2" href="index.html"><img src="images/logo.png" alt="Black + White logo icon"/></a>
-        <!-- List navigation-->
-        <ul class="nav bw-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">our services</a></li>
-          <li class="nav-item"><a class="nav-link" href="howwe.html">how we work</a></li>
-          <li class="nav-item"><a class="nav-link" href="testimonial.html">testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="work.html">work samples</a></li>
-        </ul>
-        <!-- End list navigation-->
-      </nav>
+      <div class="container">
+        <nav class="d-flex justify-content-between navbar navbar-expand-lg navbar-toggleable-md navbar-light bg-light main-nav"><a class="navbar-brand mt-2" href="index.html"><img src="images/logo.png" alt="Black + White logo icon"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <!-- List navigation-->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="nav bw-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">our services</a></li>
+              <li class="nav-item"><a class="nav-link" href="howwe.html">how we work</a></li>
+              <li class="nav-item"><a class="nav-link" href="testimonial.html">testimonials</a></li>
+              <li class="nav-item"><a class="nav-link" href="work.html">work samples</a></li>
+            </ul>
+          </div>
+          <!-- End list navigation-->
+        </nav>
+      </div>
     </header>
     <!-- End header-->
     <!-- Hero section-->
@@ -32,20 +37,20 @@
           <h3 class="my-4"> <span class="text-muted">our services.</span> from one amazing thing to another, we do it all</h3>
           <hr/>
           <div class="row">
-            <div class="col">
+            <div class="col-md-6">
               <p class="my-3">
                  Donec odio arcu, faucibus vel, accumsan eu, cursus in, ipsum. Pellentesque blandit condimentum purus. Suspendisse commodo dui.</p>
               <p>Quisque a tellus. Vestibulum tincidunt lorem ac est. Vivamus augue quam, hendrerit at, porta ut, tristique ac, lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur fringilla eros ultrices justo. Nunc condimentum. Ut id dui in erat vulputate ultricies </p>
               <p>Cras orci odio, consequat vel, venenatis id, mollis a, lorem. Ut commodo accumsan sapien. </p>
             </div>
-            <div class="col">
+            <div class="col-md-6">
               <p class="my-3">
                  Donec odio arcu, faucibus vel, accumsan eu, cursus in, ipsum. Pellentesque blandit condimentum purus. Suspendisse commodo dui.</p>
               <p>Quisque a tellus. Vestibulum tincidunt lorem ac est. Vivamus augue quam, hendrerit at, porta ut, tristique ac, lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur fringilla eros ultrices justo. Nunc condimentum. Ut id dui in erat vulputate ultricies </p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 list-div">
           <div class="grey-box">
             <div class="services mt-3">
               <h3 class="services__title text-center my-3">select a service</h3>
