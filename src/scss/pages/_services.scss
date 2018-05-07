@@ -1,0 +1,31 @@
+//======================================================================
+// Services Styles
+//======================================================================
+
+.services-bg {
+  width: 100%;
+  height: 231px;
+  background: url('../images/fish-bg.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.services {
+  background: #2e2e2e;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .services-list {
+    list-style: square;
+  }
+}
+@media #{$medium} {
+  .list-div {
+    display: none;
+  }
+}
